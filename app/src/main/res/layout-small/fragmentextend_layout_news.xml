@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/picture_news_extended"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        />
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/scroll_news"
+        android:scrollbars="none"
+        android:background="@color/horizontal_scroll_view_color"
+        android:layout_below="@+id/picture_news_extended">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear_scroll_news">
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/scroll_news"
+        android:layout_above="@+id/social"
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/description_news"
+            />
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_material_dark"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/social"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/facebook_icon"
+            android:src="@drawable/ic_new_facebook"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentLeft="true"
+            />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/insta_icon"
+            android:src="@drawable/ic_instagram"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/facebook_icon"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Application Feghali</string>
+    <string name="title_section1">Home</string>
+    <string name="title_section2">News</string>
+    <string name="title_section3">Calendar</string>
+    <string name="title_section4">Palmares</string>
+    <string name="title_section5">Results</string>
+    <string name="title_section6">About</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="News_Description">NEWS_Description</string>
+    <string name="News_title">NEWS_TITLE</string>
+    <string name="duree_view">Duree</string>
+    <string name="participant_view">Participant</string>
+    <string name="position_view">position</string>
+
+    <string name="duree_head">OT</string>
+    <string name="participant_head">Name</string>
+    <string name="position_head">pos</string>
+
+
+    <color name="horizontal_scroll_view_color">#33FF0000</color>
+    <color name="text_shadow_white">#FFFFFFFF</color>
+    <color name="blue">#262E4976</color>
+    <color name="menu_action_bar_color">#D9FFFFFF</color>
+
+
+</resources>

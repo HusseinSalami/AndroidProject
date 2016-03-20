@@ -1,0 +1,122 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="56dp"
+    >
+
+    <HorizontalScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/palmares_scroll"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/social">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="#4d000000">
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/year_palmares_header"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="Year"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/Event_text_palmares_header"
+                    android:gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:text="Event"
+                    android:textSize="16dp"
+                    />
+
+                <TextView
+                    android:layout_width="105dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/championship_palmares_header"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="Championship"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/Co_driver_text_header"
+                    android:gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:text="Co_Driver"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/Car_text_header"
+                    android:gravity="center"
+                    android:layout_marginLeft="35dp"
+                    android:text="Car"
+                    android:textSize="16dp"
+                    />
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/Comment_text_header"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center"
+                    android:text="Comment"
+                    android:textSize="16dp"/>
+
+            </LinearLayout>
+
+            <ListView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_palmares"
+                >
+
+            </ListView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_material_dark"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/social"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/facebook_icon"
+            android:src="@drawable/ic_new_facebook"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/insta_icon"
+            android:src="@drawable/ic_instagram"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/facebook_icon"/>
+
+    </RelativeLayout>
+</RelativeLayout>

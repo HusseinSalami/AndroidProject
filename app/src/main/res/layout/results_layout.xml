@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="56dp"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:background="#4d000000"
+    android:id="@+id/header"
+    android:layout_alignParentTop="true"
+   >
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_weight="0.5"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_weight="0.20"
+        android:id="@+id/position"
+        android:contentDescription="@null"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="pos"
+        android:layout_marginTop="-5dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_weight="0.40"
+        android:id="@+id/parcipant"
+        android:textStyle="bold"
+        android:text="name"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-5dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_weight="0.4"
+        android:id="@+id/duree"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:contentDescription="@null"
+        android:gravity="center"
+        android:text="OT"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="-5dp" />
+
+</LinearLayout>
+
+<HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:id="@+id/horizontal_scroll_results_header"
+        android:scrollbars="none"
+    >
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/results_header2">
+
+    </LinearLayout>
+
+</HorizontalScrollView>
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/header"
+    android:layout_above="@+id/social"
+
+    >
+
+    <ListView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:scrollbars="none"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:id="@+id/list_view_live_results_1"
+        >
+    </ListView>
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:id="@+id/horizontal_scroll_live_results"
+        android:scrollbars="none"
+        >
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_view_live_results_2"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            android:scrollbars="none"
+            >
+
+        </ListView>
+
+    </HorizontalScrollView>
+
+</LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/background_material_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/corps"
+        android:id="@+id/social">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/facebook_icon"
+            android:src="@drawable/ic_new_facebook"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/insta_icon"
+            android:src="@drawable/ic_instagram"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/facebook_icon"/>
+
+    </RelativeLayout>
+    </RelativeLayout>
